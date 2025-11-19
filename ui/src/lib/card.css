@@ -1,0 +1,45 @@
+.back-ground-color{
+
+    background-color: #4682B4;
+}
+
+.color-white{
+
+    color: white;
+}
+
+.card{
+
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    background: white;
+    transition: 0.3s;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.card:hover{
+
+    background: whitesmoke;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0, 0.2);
+}
+
+.card-header{
+
+    padding: 0.5rem;
+}
+
+.card-body{
+
+    padding: 1rem;
+    font-size: 1.1em;
+}
+
+.card-footer{
+
+    padding: 0.5rem;
+    grid-row-start: 3;
+}

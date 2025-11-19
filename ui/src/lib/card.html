@@ -1,0 +1,21 @@
+<div class="card">
+    @if(showHeader){
+        <div class="card-header back-ground-color color-white">
+            <h3>{{headerText}}</h3>
+        </div>
+    }
+    <div class="card-body">
+        <ng-content></ng-content>
+    </div>
+    @if(showFooter){
+        <div class="card-footer back-ground-color color-white">
+            @if(footerText){
+                <footer>{{footerText}}</footer>
+            }
+            @if(template){
+                <ng-container *ngTemplateOutlet="template; context:{footerName: 'Footer: '}">
+                </ng-container>
+            }
+        </div>
+    }
+</div>
