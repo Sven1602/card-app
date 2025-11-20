@@ -1,5 +1,13 @@
 # CardApp
 
+Folgende weitere Features sind noch sinnvoll:
+
+1. Benachrichtigung der Parent Komponente nach dem Löschen einer Card Komponente.
+2. Übergabe einer Info bzw. Details an die Parent Komponente. (ist schon an implementiert)
+3. Übergabe eines Image an den Header.
+4. Erweitern der Cards(Liste) um  eine add Funktion, um neue Card Komponenten hinzuzufügen.
+Die Verwaltung der Card Objekte wird im Service vorgenommen. Dabei wird bei der Aktualisierung der Daten mittels EventEmitter Objekt ein Event generiert, dass alle sich darauf registrierten Komponenten über die neuen Daten informiert.
+
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
 ✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
