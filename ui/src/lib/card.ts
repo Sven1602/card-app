@@ -16,6 +16,8 @@ export class Card {
   @Input() template?: TemplateRef<any>;
 
   // weiteres Feature um Daten zwischen der Card Komponente und der Parent Komponente zu teilen
+  // Bsp.: Benachrichtigung der Parent Komponente nach dem Löschen einer Card Komp.
+  // oder Übergabe einer Info bzw. Details an die Parent Komponente
   @Output() showMessage = new EventEmitter<string>();
 
   callEventShowMessage() {

@@ -8,9 +8,14 @@
     color: white;
 }
 
+.info{
+
+    margin: 0.1rem;
+}
+
 .card{
 
-    border: 1px solid whitesmoke;
+    border: 1px solid gray;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
