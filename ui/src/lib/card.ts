@@ -9,10 +9,10 @@ import { Component, EventEmitter, Input, Output, TemplateRef } from '@angular/co
 })
 export class Card {
 
-  @Input() headerText: string = "";
-  @Input() showHeader: boolean = true;
-  @Input() showFooter: boolean = true;
-  @Input() footerText: string = "";
+  @Input() headerText = "";
+  @Input() showHeader = true;
+  @Input() showFooter = true;
+  @Input() footerText = "";
   @Input() template?: TemplateRef<any>;
 
   // weiteres Feature um Daten zwischen der Card Komponente und der Parent Komponente zu teilen
