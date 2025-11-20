@@ -14,4 +14,8 @@ export class App {
 
   headerText = "Card Header";
   footerText = "Footer Text";
+
+  handleMessage(message: string) {
+    alert(message);
+  }
 }

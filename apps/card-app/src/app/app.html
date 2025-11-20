@@ -1,18 +1,18 @@
 <!-- <app-nx-welcome></app-nx-welcome> -->
 <!-- <router-outlet></router-outlet> -->
 <div class="cards">
-    <lib-card [headerText]="headerText" [showHeader]="false" [showFooter]="false">
+    <lib-card (showMessage)="handleMessage($event)" [headerText]="headerText" [showHeader]="false" [showFooter]="false">
         <p>Nur mit Body.</p>
     </lib-card>
-    <lib-card [headerText]="headerText" [showHeader]="true" [showFooter]="false">
+    <lib-card (showMessage)="handleMessage($event)" [headerText]="headerText" [showHeader]="true" [showFooter]="false">
         <p>Header und Body.</p>
     </lib-card>
-    <lib-card [headerText]="headerText" [footerText]="footerText" [showHeader]="false" [showFooter]="true">
+    <lib-card (showMessage)="handleMessage($event)" [headerText]="headerText" [footerText]="footerText" [showHeader]="false" [showFooter]="true">
         <p>Body und Footer (mit Text).</p>
         <hr>
         <p>weiterer Text ... </p>
     </lib-card>
-    <lib-card [template]="cardFooter" [headerText]="headerText" [showHeader]="true" [showFooter]="true">
+    <lib-card (showMessage)="handleMessage($event)" [template]="cardFooter" [headerText]="headerText" [showHeader]="true" [showFooter]="true">
         <p>Header und Body und Footer (mit Template).</p>
     </lib-card>
 </div>

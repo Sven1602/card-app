@@ -1,5 +1,5 @@
 import { CommonModule, NgTemplateOutlet } from '@angular/common';
-import { Component, Input, TemplateRef } from '@angular/core';
+import { Component, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'lib-card',
@@ -14,4 +14,12 @@ export class Card {
   @Input() showFooter: boolean = true;
   @Input() footerText: string = "";
   @Input() template?: TemplateRef<any>;
+
+  // weiteres Feature um Daten zwischen der Card Komponente und der Parent Komponente zu teilen
+  @Output() showMessage = new EventEmitter<string>();
+
+  callEventShowMessage() {
+
+    this.showMessage.emit("Message to Parent");
+  }
 }
